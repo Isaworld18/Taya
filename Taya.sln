@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36811.4
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Taya_Application", "Taya_Application\Taya_Application.csproj", "{CEC97338-71F7-4C1A-8EE0-652FE8E3287A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Taya_Infraestructure", "Taya_Infraestructure\Taya_Infraestructure.csproj", "{595ABD7E-6267-4A3D-891A-BCCF83A80976}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Taya_Domain", "Taya_Domain\Taya_Domain.csproj", "{B86866F0-387F-4C02-8CEC-799AD7E7278B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Taya_Helper", "Taya_Helper\Taya_Helper.csproj", "{0EF77E57-C706-491A-881F-4E3291EE8996}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Taya_Api", "Taya_Api\Taya_Api.csproj", "{C7811F2B-0216-FE82-EC72-798AF3C0F80A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Taya_Test", "Taya_Test\Taya_Test.csproj", "{7C203B2A-FE77-4EF7-B055-CD3D0F08F4DA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CEC97338-71F7-4C1A-8EE0-652FE8E3287A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEC97338-71F7-4C1A-8EE0-652FE8E3287A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEC97338-71F7-4C1A-8EE0-652FE8E3287A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEC97338-71F7-4C1A-8EE0-652FE8E3287A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{595ABD7E-6267-4A3D-891A-BCCF83A80976}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{595ABD7E-6267-4A3D-891A-BCCF83A80976}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{595ABD7E-6267-4A3D-891A-BCCF83A80976}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{595ABD7E-6267-4A3D-891A-BCCF83A80976}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B86866F0-387F-4C02-8CEC-799AD7E7278B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B86866F0-387F-4C02-8CEC-799AD7E7278B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B86866F0-387F-4C02-8CEC-799AD7E7278B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B86866F0-387F-4C02-8CEC-799AD7E7278B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0EF77E57-C706-491A-881F-4E3291EE8996}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EF77E57-C706-491A-881F-4E3291EE8996}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EF77E57-C706-491A-881F-4E3291EE8996}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EF77E57-C706-491A-881F-4E3291EE8996}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7811F2B-0216-FE82-EC72-798AF3C0F80A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7811F2B-0216-FE82-EC72-798AF3C0F80A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7811F2B-0216-FE82-EC72-798AF3C0F80A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7811F2B-0216-FE82-EC72-798AF3C0F80A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C203B2A-FE77-4EF7-B055-CD3D0F08F4DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C203B2A-FE77-4EF7-B055-CD3D0F08F4DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C203B2A-FE77-4EF7-B055-CD3D0F08F4DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C203B2A-FE77-4EF7-B055-CD3D0F08F4DA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AFF7E2BF-FA7A-41E3-87E9-1A7545AB8FA6}
+	EndGlobalSection
+EndGlobal
