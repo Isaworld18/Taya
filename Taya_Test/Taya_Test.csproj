@@ -15,7 +15,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Taya_Api\Taya_Api.csproj" />
     <ProjectReference Include="..\Taya_Application\Taya_Application.csproj" />
     <ProjectReference Include="..\Taya_Domain\Taya_Domain.csproj" />
     <ProjectReference Include="..\Taya_Helper\Taya_Helper.csproj" />

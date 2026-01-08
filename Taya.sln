@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.14.36811.4
+# Visual Studio Version 18
+VisualStudioVersion = 18.1.11312.151 d18.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Taya_Application", "Taya_Application\Taya_Application.csproj", "{CEC97338-71F7-4C1A-8EE0-652FE8E3287A}"
 EndProject
@@ -10,8 +10,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Taya_Domain", "Taya_Domain\Taya_Domain.csproj", "{B86866F0-387F-4C02-8CEC-799AD7E7278B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Taya_Helper", "Taya_Helper\Taya_Helper.csproj", "{0EF77E57-C706-491A-881F-4E3291EE8996}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Taya_Api", "Taya_Api\Taya_Api.csproj", "{C7811F2B-0216-FE82-EC72-798AF3C0F80A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Taya_Test", "Taya_Test\Taya_Test.csproj", "{7C203B2A-FE77-4EF7-B055-CD3D0F08F4DA}"
 EndProject
@@ -37,10 +35,6 @@ Global
 		{0EF77E57-C706-491A-881F-4E3291EE8996}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0EF77E57-C706-491A-881F-4E3291EE8996}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0EF77E57-C706-491A-881F-4E3291EE8996}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C7811F2B-0216-FE82-EC72-798AF3C0F80A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C7811F2B-0216-FE82-EC72-798AF3C0F80A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C7811F2B-0216-FE82-EC72-798AF3C0F80A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C7811F2B-0216-FE82-EC72-798AF3C0F80A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{7C203B2A-FE77-4EF7-B055-CD3D0F08F4DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7C203B2A-FE77-4EF7-B055-CD3D0F08F4DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7C203B2A-FE77-4EF7-B055-CD3D0F08F4DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
