@@ -3,9 +3,9 @@
     using Taya_Domain.Entities;
     using Taya_Helper.DTOs;
 
-    public class MovementMapper
+    public static class MovementMapper
     {
-        public Movement ToEntity(MovementDto dto)
+        public static Movement ToEntity(MovementDto dto)
         {
             Movement entity = new()
             {
@@ -20,7 +20,7 @@
             return entity;
         }
 
-        public MovementDto ToDto(Movement entity)
+        public static MovementDto ToDto(Movement entity)
         {
             MovementDto dto = new()
             {

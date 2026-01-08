@@ -15,29 +15,29 @@
     {
         private readonly Taya_DbContext _DbContext = new();
 
-        public async Task<Guid?> Add(Movement entity)
+        public async Task<Guid?> Add(Movement entity, CancellationToken cancellationToken)
         {
-            await _DbContext.Movements.AddAsync(entity);
+            await _DbContext.Movements.AddAsync(entity, cancellationToken);
             _DbContext.SaveChanges();
 
             return entity.Id;
         }
 
-        public void Delete(Movement entity)
+        public void Delete(Movement entity, CancellationToken cancellationToken)
         {
             _DbContext.Movements.Remove(entity);
             _DbContext.SaveChanges();
         }
 
-        public async Task<IEnumerable<Movement>> GetAll(BaseFilter filter)
+        public async Task<IEnumerable<Movement>> GetAll(BaseFilter filter, CancellationToken cancellationToken)
         {
             return await _DbContext.Movements
                                    .Skip(filter.Page)
                                    .Take(filter.Size)
-                                   .ToListAsync();
+                                   .ToListAsync(cancellationToken);
         }
 
-        public async Task<IEnumerable<Movement>> GetBy(MovementFilter filter)
+        public async Task<IEnumerable<Movement>> GetBy(MovementFilter filter, CancellationToken cancellationToken)
         {
             var query = _DbContext.Movements;
 
@@ -66,18 +66,18 @@
                 query = (DbSet<Movement>)query.Where(q => q.Description.ToLower() == filter.Description.ToLower());
             }
 
-            return await query.Skip(filter.Page).Take(filter.Size).ToListAsync();
+            return await query.Skip(filter.Page).Take(filter.Size).ToListAsync(cancellationToken);
         }
 
-        public Movement? GetByid(Guid id)
+        public Movement? GetByid(Guid id, CancellationToken cancellationToken)
         {
             return (Movement?)(_DbContext.Movements.Select(m => m.Id == id));
         }
 
-        public async Task Update(Movement entity)
+        public async Task Update(Movement entity, CancellationToken cancellationToken)
         {
             _DbContext.Movements.Update(entity);
-            await _DbContext.SaveChangesAsync();
+            await _DbContext.SaveChangesAsync(cancellationToken);
         }
     }
 }

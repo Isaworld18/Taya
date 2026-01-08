@@ -18,10 +18,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\Taya_Application\Taya_Application.csproj" />
     <ProjectReference Include="..\Taya_Helper\Taya_Helper.csproj" />
     <ProjectReference Include="..\Taya_Infraestructure\Taya_Infraestructure.csproj" />
