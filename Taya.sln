@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Taya_Helper", "Taya_Helper\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Taya_Test", "Taya_Test\Taya_Test.csproj", "{7C203B2A-FE77-4EF7-B055-CD3D0F08F4DA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Taya_WebApi", "Taya_WebApi\Taya_WebApi.csproj", "{2557F250-D55A-4A25-B1AD-A2381577563A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{7C203B2A-FE77-4EF7-B055-CD3D0F08F4DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7C203B2A-FE77-4EF7-B055-CD3D0F08F4DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7C203B2A-FE77-4EF7-B055-CD3D0F08F4DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2557F250-D55A-4A25-B1AD-A2381577563A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2557F250-D55A-4A25-B1AD-A2381577563A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2557F250-D55A-4A25-B1AD-A2381577563A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2557F250-D55A-4A25-B1AD-A2381577563A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

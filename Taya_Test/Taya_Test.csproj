@@ -19,6 +19,7 @@
     <ProjectReference Include="..\Taya_Domain\Taya_Domain.csproj" />
     <ProjectReference Include="..\Taya_Helper\Taya_Helper.csproj" />
     <ProjectReference Include="..\Taya_Infraestructure\Taya_Infraestructure.csproj" />
+    <ProjectReference Include="..\Taya_WebApi\Taya_WebApi.csproj" />
   </ItemGroup>
 
   <ItemGroup>

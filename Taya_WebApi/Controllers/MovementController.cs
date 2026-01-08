@@ -1,4 +1,4 @@
-﻿namespace Taya_Api.Controllers
+﻿namespace Taya_WebApi.Controllers
 {
     using System.Net;
     using MediatR;
