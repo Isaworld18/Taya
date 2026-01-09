@@ -71,6 +71,34 @@
             }
         }
 
+        [HttpGet]
+        [Route("GetAll")]
+        [ProducesResponseType(typeof(GetMovementResponse), (int)HttpStatusCode.OK)]
+        public async Task<IActionResult> GetAll([FromBody] BaseFilter filter)
+        {
+            try
+            {
+                var data = await _mediator.Send(new GetAllMovementQuery(filter));
+
+                var totals = MovementHelper.GetTotalAmounts(data);
+
+                GetMovementResponse response = new()
+                {
+                    Data = data,
+                    TotalMovement = data.Count(),
+                    TotalIncomes = totals.Value,
+                    TotalExpenses = totals.Key
+                };
+
+                return Ok(response);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError($"Error on GetBy method, {ex.Message}", DateTime.UtcNow.ToLongTimeString());
+
+                return BadRequest("Unable to execute your action, please try again later");
+            }
+        }
 
         [HttpPost]
         [Route("")]
