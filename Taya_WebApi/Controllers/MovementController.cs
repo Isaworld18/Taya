@@ -10,6 +10,9 @@
     using Taya_Helper.DTOs;
     using Taya_Helper.Filters;
 
+    /// <summary>
+    /// Movement main controller including CRUD endpoints
+    /// </summary>
     [ApiController]
     [Route("api/Movements")]
     public class MovementController : Controller
@@ -17,12 +20,22 @@
         private readonly IMediator _mediator;
         private readonly ILogger _logger;
 
+        /// <summary>
+        /// Main constructor por DI
+        /// </summary>
+        /// <param name="mediator"></param>
+        /// <param name="logger"></param>
         public MovementController(IMediator mediator, ILogger logger)
         { 
             _logger = logger;
             _mediator = mediator;
         }
 
+        /// <summary>
+        /// Get a single movement by his Id
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpGet]
         [Route("{movementId}")]
         [ProducesResponseType(typeof(MovementDto), (int)HttpStatusCode.OK)]
@@ -42,6 +55,11 @@
             }
         }
 
+        /// <summary>
+        /// Get many movements by a filter parameter
+        /// </summary>
+        /// <param name="filter"></param>
+        /// <returns></returns>
         [HttpGet]
         [Route("GetByFilter")]
         [ProducesResponseType(typeof(GetMovementResponse), (int)HttpStatusCode.OK)]
@@ -71,6 +89,11 @@
             }
         }
 
+        /// <summary>
+        /// Get all existing movements on the system
+        /// </summary>
+        /// <param name="filter"></param>
+        /// <returns></returns>
         [HttpGet]
         [Route("GetAll")]
         [ProducesResponseType(typeof(GetMovementResponse), (int)HttpStatusCode.OK)]
@@ -100,6 +123,11 @@
             }
         }
 
+        /// <summary>
+        /// Add a new movement
+        /// </summary>
+        /// <param name="data"></param>
+        /// <returns></returns>
         [HttpPost]
         [Route("")]
         [ProducesResponseType(typeof(Guid?), (int)HttpStatusCode.Created)]
